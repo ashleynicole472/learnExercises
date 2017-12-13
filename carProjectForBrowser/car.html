@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="car.css">
+        <script type="text/javascript" src="car.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <title>Car Speed Racer</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row header">
+                <div class="col-sm-12">
+        <h1>Speed Racer</h1>
+                </div>
+            </div>
+            <div class="row gas-break">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-success" onclick="myTesla.accelerate()">Gas</button>
+                    <button type="button" class="btn btn-danger" onclick="myTesla.deaccelerate()">Break</button>
+                    <button type="button" class="btn btn-warning" onclick="myTesla.lightOn()">Lights on</button>
+                    <button type="button" class="btn btn-secondary" onclick="myTesla.lightOff()">Lights off</button>
+                    <button type="button" class="btn btn-outline-secondary" onClick="myTesla.turnRight()">Signal right</button>
+                    <button type="button" class="btn btn-outline-secondary" onClick="myTesla.turnLeft()">Signal left</button>
+                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Model: Tesla Model year: 2018">
+                     Car Information
+                    </button>
+                </div>
+            </div>
+            <div class="row tesla">
+                <div class="col-sm-12">
+                    <img src="http://res.freestockphotos.biz/pictures/15/15685-illustration-of-a-red-cartoon-car-pv.png" alt="tesla" height="250
+                    px" width="250px" id="tesla">
+                </div>
+            </div>
+            <div class="row tata">
+                <div class="col-sm-12">
+                    <div class="row gas-break">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-success" onclick="myTatas.accelerate()">Gas</button>
+                            <button type="button" class="btn btn-danger" onclick="myTatas.deaccelerate()">Break</button>
+                            <button type="button" class="btn btn-warning" onclick="myTatas.lightOn()">Lights on</button>
+                            <button type="button" class="btn btn-secondary" onclick="myTatas.lightOff()">Lights off</button>
+                            <button type="button" class="btn btn-outline-secondary" onClick="myTatas.turnRight()">Signal right</button>
+                            <button type="button" class="btn btn-outline-secondary" onClick="myTatas.turnLeft()">Signal left</button>
+                            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Model: Tata Model year: 1989">
+                             Car Information
+                            </button>
+                        </div>
+                    </div>
+                    <img src="http://moziru.com/images/mini-clipart-animated-car-2.png" alt="tata" height="250
+                    px" width="250px" id="tata">
+                </div>
+            </div>
+            <div class="row toyota">
+                <div class="col-sm-12">
+                    <div class="row gas-break">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-success" onclick="myToyota.accelerate()">Gas</button>
+                            <button type="button" class="btn btn-danger" onclick="myToyota.deaccelerate()">Break</button>
+                            <button type="button" class="btn btn-warning" onclick="myToyota.lightOn()">Lights on</button>
+                            <button type="button" class="btn btn-secondary" onclick="myToyota.lightOff()">Lights off</button>
+                            <button type="button" class="btn btn-outline-secondary" onClick="myToyota.turnRight()">Signal right</button>
+                            <button type="button" class="btn btn-outline-secondary" onClick="myToyota.turnLeft()">Signal left</button>
+                            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Model: Toyota Model year: 2089">
+                             Car Information
+                            </button>
+                        </div>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw3RaIBwG0uLiSLbUhiwJHI1hkN1Rp4l_hf20UpX4LYEfjUZCh" alt="toyota" height="250
+                    px" width="250px" id="toyota">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
