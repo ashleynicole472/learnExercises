@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h3, h1 {
+    text-align: center;
+}
+#death {
+display: block;
+margin: 0 auto;
+}
+#quote{
+    color: #D60C16;
+}
