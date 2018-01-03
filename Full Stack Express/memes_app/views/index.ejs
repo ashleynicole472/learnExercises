@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Programming memes</title>
+
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <nav id="mainPage">
+            <ul>
+                <% for (var key in jokes) { %>
+                    <li>
+                        <a href='/jokepage/<%= key %>'>
+                            <%= key %>
+                        </a>
+                    </li>
+                <% } %>
+            </ul>
+        </nav>
+
+        <img id="heading" src='/images/heading.png' alt="Programming Jokes header"/>
+        <h1> Programming Jokes </h1>
+
+        <p>
+            if (sad){ </br>
+                read jokes </br>
+            } else { </br>
+                go home
+            };
+        </p>
+
+        <div class='container'>
+            <ul>
+                <% for (var key in jokes) { %>
+                    <li>
+                        <a href='/jokepage/<%= key %>'>
+                            <img class="thumbnails" src='<%= jokes[key]['image'] %>' />
+                        </a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+
+    </body>
+</html>
