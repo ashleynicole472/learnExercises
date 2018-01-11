@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": null,
+    "password": null,
+    "database": "todo_list_express",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": null,
+    "password": null,
+    "database": "todo_list_express_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
