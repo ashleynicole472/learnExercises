@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Car Challenge</title>
+<!-- Boostrap and CSS file link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./carAtHome.css" type="text/css">
+  </head>
+  <body>
+<!-- container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"><h1>Cars go Vroom Vroom!</h1></div>
+        </div>
+<!-- Buttons for the Tesla -->
+        <div class="row Tesla">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-success" onclick="teslaSpeedUp()">Gas</button>
+              <button type="button" class="btn btn-danger" onclick="teslaSlowDown()">Break</button>
+              <button type="button" class="btn btn-info" onclick="myTesla.turnRight()">Right Signal</button>
+              <button type="button" class="btn btn-primary" onclick="myTesla.turnLeft()">Left signal</button>
+              <button type="button" class="btn btn-warning" onclick="myTesla.lightOn()">Lights On</button>
+              <button type="button" class="btn btn-secondary" onclick="myTesla.lightOff()">Lights Off</button>
+            </div>
+        </div>
+<!-- Div for Tesla -->
+        <div class="row">
+          <img src="https://www.pluglesspower.com/wp-content/uploads/2016/12/tesla-model-s-on-transparent-background-plugless-1024x348.png" alt="Tesla" width="150px" height="50 px">
+        </div>
+<!-- div for speed -->
+        <div class="row">
+            <p id="teslaSpeed">Speed: 0 km/h</p>
+        </div>
+<!-- Buttons for the Toyota -->
+        <div class="row Toyota">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-success" onclick="toyotaSpeedUp()">Gas</button>
+              <button type="button" class="btn btn-danger" onclick="toyotaSlowDown()">Break</button>
+              <button type="button" class="btn btn-info" onclick="myToyota.turnRight()">Right Signal</button>
+              <button type="button" class="btn btn-primary" onclick="myToyota.turnLeft()">Left signal</button>
+              <button type="button" class="btn btn-warning" onclick="myToyota.lightOn()">Lights On</button>
+              <button type="button" class="btn btn-secondary" onclick="myToyota.lightOff()">Lights Off</button>
+            </div>
+        </div>
+<!-- Div for Toyota -->
+          <div class="row">
+            <img src="http://data.3dtuning.com/tun/CXrb_gt8ox.png" alt="Toyota" width="150px" height="70px">
+          </div>
+<!-- Div for speed -->
+          <div class="row">
+            <p id="toyotaSpeed">Speed: 0 km/h</p>
+          </div>
+<!-- Buttons for the Tata -->
+        <div class="row Tata">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-success" onclick="tataSpeedUp()">Gas</button>
+              <button type="button" class="btn btn-danger" onclick="tataSlowDown()">Break</button>
+              <button type="button" class="btn btn-info" onclick="myTata.turnRight()">Right Signal</button>
+              <button type="button" class="btn btn-primary" onclick="myTata.turnLeft()">Left signal</button>
+              <button type="button" class="btn btn-warning" onclick="myTata.lightOn()">Lights On</button>
+              <button type="button" class="btn btn-secondary" onclick="myTata.lightOff()">Lights Off</button>
+            </div>
+        </div>
+<!-- div for Tata picture -->
+        <div class="row">
+          <img src="http://www.carkhabri.com/Gallery/tata/tata-zest/exterior/large/44.jpg" alt="Tata" width="130px" height="75px">
+        </div>
+<!-- div for speed -->
+        <div class="row">
+            <p id="tataSpeed">Speed: 0 km/h</p>
+        </div>
+
+        <div >
+          <p id="test">Hello World My Name is Ashley<p>
+        </div>
+    </div>
+<!-- JS link -->
+    <script type="text/javascript" src="./carAtHome.js"></script>
+  </body>
+</html>
