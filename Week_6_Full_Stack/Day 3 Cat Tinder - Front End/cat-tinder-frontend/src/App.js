@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {
+    Button,
     Grid,
     Row,
     Col,
@@ -41,80 +42,78 @@ class App extends Component {
 render() {
     return (
         <Router>
-          <div>
-            <Route exact path="/" render={props => (
-          <div>
-            <div className="container-fluid">
-              <Row>
-                <Col sm={12}>
-                  <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                    <a className="navbar-brand" href="/">Cat tinder</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+            <div>
+                <Route exact path="/" render={props => (
+                    <div>
+                        <div className="container-fluid">
+                          <Row>
+                            <Col sm={12}>
+                              <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                                <a className="navbar-brand" href="/">Cat tinder</a>
+                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                                    <span className="navbar-toggler-icon"></span>
+                                </button>
 
-                    <div className="collapse navbar-collapse" id="navbarColor01">
-                        <ul className="navbar-nav mr-auto">
-                            <li className="nav-item active">
-                              <a className="nav-link">Add a Cat <span className="sr-only">(current)</span></a>
-                            </li>
-                            <li className="nav-item">
-                              <a className="nav-link" href="/cats">Show me the cats</a>
-                            </li>
-                        </ul>
+                                <div className="collapse navbar-collapse" id="navbarColor01">
+                                    <ul className="navbar-nav mr-auto">
+                                        <li className="nav-item active">
+                                          <a className="nav-link">Add a Cat <span className="sr-only">(current)</span></a>
+                                        </li>
+                                        <li className="nav-item">
+                                          <a className="nav-link" href="/cats">Show me the cats</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </nav>
+                            </Col>
+                          </Row>
+                        </div>
+
+                        <div className = "container">
+                            <Row>
+                                <Col sm={8}>
+                                    <NewCat />
+                                </Col>
+                            </Row>
+                        </div>
                     </div>
-                  </nav>
-                </Col>
-              </Row>
+                )} />
+
+                <Route exact path="/cats" render={props => (
+                    <div>
+                        <div className="container-fluid">
+                            <Row>
+                                <Col sm={12}>
+                                    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                                        <a className="navbar-brand" href="/">Cat tinder</a>
+                                        <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                                        <span className="navbar-toggler-icon"></span>
+                                        </Button>
+                                            <div className="navbar-collapse collapse" id="navbarColor01">
+                                                <ul className="navbar-nav mr-auto">
+                                                    <li className="nav-item active">
+                                                        <a className="nav-link">All the Cats <span className="sr-only">(current)</span></a>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <a className="nav-link" href="/">Add a Cat</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </nav>
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className= "container">
+                            <Row>
+                                <Col>
+                                    <Cats cats={this.state.cats} />
+                                    </Col>
+                            </Row>
+                        </div>
+                    </div>
+                )} />
             </div>
-
-          <div className = "container">
-                <Row>
-                    <Col sm={8}>
-                        <NewCat />
-                    </Col>
-                </Row>
-              </div>
-            </div>
-            )} />
-
-          <div>
-           <Route exact path="/cats" render={props => (
-                <div className="container-fluid">
-                 <Row>
-                  <Col sm={12}>
-                        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                            <a className="navbar-brand" href="/">Cat tinder</a>
-                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                            </button>
-                <div className="collapse navbar-collapse" id="navbarColor01">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
-                            <a className="nav-link">All the Cats <span className="sr-only">(current)</span></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Add a Cat</a>
-                        </li>
-                    </ul>
-
-                </div>
-                        </nav>
-                </Col>
-                 </Row>
-                </div>
-
-                <div className= "container">
-                 <Row>
-                    <Col>
-                        <Cats cats={this.state.cats} />
-                    </Col>
-                 </Row>
-                </div>
-                </div>
-            )} />
-        </div>
-    </Router>
+        </Router>
     );
   }
 }
