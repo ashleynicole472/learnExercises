@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hi Lo Game</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/cyborg/bootstrap.min.css">
+        <script src = "HiLo_Game.js"></script>
+    </head>
+    <body>
+      <container>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://ashataylor.com/">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+        <div class="jumbotron">
+          <h1 class="display-3" style="color:limegreen;"> Step on up!</h1>
+          <p class="lead"> <h5>Enter a number between 0-20 and see if it's a match</h5></p>
+          <hr class="my-4">
+          <p><h6>May the odds be ever in your favor!</h6></p>
+        </div>
+
+        <div class="textbox" style="display:flex;justify-content:center;align-items:center;">
+            <h5>Guess a number from 0-20. </h5>
+            <input id= "inputNumber" type="text" pattern="^[0-9]*$"/>
+            <button id= "button" onclick="computersNumber()" class="btn btn-success">Guess the number...</button>
+        </div>
+
+      </container>
+    </body>
+</html>
