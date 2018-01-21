@@ -3,6 +3,14 @@
 h1, h3{
     font-family: 'Gloria Hallelujah', cursive;
 }
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    background-color: mistyrose;
+}
+a {
+	color: black;
+}
 /*font used for body*/
 li , p, button{
     font-family: 'Montserrat', sans-serif;
@@ -12,7 +20,20 @@ li , p, button{
     padding: 35px;
 }
 
+.collapse.show {
+    display: block;
+    background-color: mistyrose;
+}
+
 table{
     border-width: 10px solid thick;
     border-color: black;
+}
+
+body {
+	background-color: lightpink;
+}
+
+#headingone.card-header {
+	background-color: mistypink;
 }
